@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chúc mừng sinh nhật Duke</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#fff7fb;--fg:#3b1d4f;--accent:#ff3d9a;--btn-fg:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a0b2e;--fg:#fff4fb;--accent:#ff5cae}}
+:root[data-theme="dark"]{--bg:#1a0b2e;--fg:#fff4fb;--accent:#ff5cae}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--fg);font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;padding:1.5rem;text-align:center}
+h1{margin:0;font-size:clamp(2rem,8vw,4rem)}
+button{font:inherit;font-weight:700;cursor:pointer;border:0;color:var(--btn-fg);background:var(--accent);padding:.8rem 1.8rem;border-radius:999px}
+[hidden]{display:none}
+</style>
+</head>
+<body>
+<h1 id="t">Duke gay</h1>
+<button id="b">Tiếp tục</button>
+<script>
+const s=["Duke gay","Duke bel","Chúc mừng sinh nhật Duke bel gay"];
+let i=0;const t=document.getElementById('t'),b=document.getElementById('b');
+b.onclick=()=>{i++;t.textContent=s[i];if(i===s.length-1)b.hidden=true};
+</script>
+</body>
+</html>
